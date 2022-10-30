@@ -4,3 +4,10 @@ window.onload = function myLoadFunction() {
 };
 
 //the listener function here
+function miAlerta(){
+	return alert("wuju");
+}
+
+
+let miBoton = document.getElementById("theGreen");
+miBoton.addEventListener("click", miAlerta, false);

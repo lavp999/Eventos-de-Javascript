@@ -1,8 +1,9 @@
 //Declare your function here
-function miFuncion(){
+function laFuncion(){
     alert("Hello World");
+    return 0;
 }
 
 let miInput = document.getElementById("hello");
-miInput.setAttribute("onclick", "miFuncion()");
+miInput.setAttribute("onclick", "laFuncion()");
 miInput.setAttribute("value", "Hola Mundo");

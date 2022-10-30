@@ -1,6 +1,10 @@
 //This is a global variable
 var counter = 0;
 
+function muestraValor(){
+	return document.getElementById('screen').innerHTML = "The counter value is "+counter;
+}
+
 window.onload = function loadFunction()
 {
 	//here I set the screen to the initial value when the website is fully loaded.
@@ -14,4 +18,16 @@ window.increaseCounter = function increaseCounter()
 	counter++;
 	//update the screen with the new value
 	document.getElementById('screen').innerHTML = "The counter value is "+counter;
-}
+} 
+
+window.decreaseCounter = function decreaseCounter()
+{
+	//decrease the global counter in one
+	counter--;
+	//update the screen with the new value
+	document.getElementById('screen').innerHTML = "The counter value is "+counter;
+} 
+
+
+
+
