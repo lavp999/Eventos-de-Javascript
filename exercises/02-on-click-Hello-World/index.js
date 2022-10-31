@@ -5,5 +5,4 @@ function laFuncion(){
 }
 
 let miInput = document.getElementById("hello");
-miInput.setAttribute("onclick", "laFuncion()");
-miInput.setAttribute("value", "Hola Mundo");
+miInput.addEventListener("click", laFuncion());
